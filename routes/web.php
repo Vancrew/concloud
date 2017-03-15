@@ -20,5 +20,4 @@ Route::get('admin', function () {
 
 });
 
-
 Route::get('home', 'HomeController@index');
