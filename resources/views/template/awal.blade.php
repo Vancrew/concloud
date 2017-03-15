@@ -31,7 +31,7 @@
   </head>
   <body class="skin-blue">
     <div class="wrapper">
-      @include('template.header')
+      @include('template.header1')
       @include('template.sidebar')
 
       <!-- Content Wrapper. Contains page content -->
