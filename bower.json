@@ -1,0 +1,23 @@
+{
+  "name": "concloud",
+  "description": "Containers Cloud",
+  "main": "",
+  "authors": [
+    "Vancrew <im26vancrew@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Vancrew/concloud",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_resources",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "AdminLTE": "admin-lte#^2.3.11"
+  }
+}
