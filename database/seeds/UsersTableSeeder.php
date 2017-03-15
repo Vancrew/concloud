@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@concloud.com',
             'password' => bcrypt('admin'),
-            'role' => 'admin',
+            'admin' => 1,
         ]);
     }
 }
