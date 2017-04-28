@@ -1,4 +1,4 @@
-@extends('template.awal')
+@extends('layouts.default')
 
 @section('content')
 <div class="container">

@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
+*/
 
 Route::get('admin', function () {
     return view('template.main');
@@ -24,3 +25,9 @@ Route::get('home', 'HomeController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/', 'HomeController@index');
+
+Route::get('about', 'HomeController@about');
+
+Route::get('/logout', 'HomeController@logout');

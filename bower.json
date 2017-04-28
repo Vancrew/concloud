@@ -14,11 +14,12 @@
     "bower_components",
     "public/bower_resources",
     "test",
-    "tests"
+    "tests",
+    "public/bower_components"
   ],
   "dependencies": {
     "AdminLTE": "admin-lte#^2.3.11",
     "selectize": "^0.12.4",
-    "numeral": "^2.0.4",
+    "numeral": "^2.0.4"
   }
 }
