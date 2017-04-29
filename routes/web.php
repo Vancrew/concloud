@@ -31,3 +31,7 @@ Route::get('/', 'HomeController@index');
 Route::get('about', 'HomeController@about');
 
 Route::get('/logout', 'HomeController@logout');
+
+Route::get('/imagelist', 'HomeController@imagelist');
+
+Route::get('/conlist', 'HomeController@conlist');

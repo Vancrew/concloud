@@ -34,6 +34,16 @@ class HomeController extends Controller
         return view('tampil.index');
     }
 
+    public function imagelist()
+    {
+        return view('tampil.imagelist');
+    }
+
+     public function conlist()
+    {
+        return view('tampil.conlist');
+    }
+
     public function about()
     {
         return view('tampil.about');
