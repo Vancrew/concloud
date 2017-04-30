@@ -35,3 +35,6 @@ Route::get('/logout', 'HomeController@logout');
 Route::get('/imagelist', 'HomeController@imagelist');
 
 Route::get('/conlist', 'HomeController@conlist');
+
+Route::get('/uploadfile','UploadFileController@index');
+Route::post('/uploadfile','UploadFileController@showUploadFile');

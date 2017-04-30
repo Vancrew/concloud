@@ -6,4 +6,4 @@
 			<h2 align="center"> {{ "BELAJAR BLADE TEMPLATE ENGINE" }} </h2>
 	 </div>
 </div>	 		
-@stop
+@endsection

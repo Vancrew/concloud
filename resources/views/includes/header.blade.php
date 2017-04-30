@@ -32,7 +32,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Cpanel<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="{{ url('/home') }}">Upload</a></li>
+            <li><a href="{{ url('/uploadfile') }}">Upload</a></li>
             <li><a href="{{URL::to('/')}}">List</a></li>
           </ul>
         </li>
