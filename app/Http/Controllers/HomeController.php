@@ -41,7 +41,7 @@ class HomeController extends Controller
 
      public function conlist()
     {
-        return view('tampil.conlist');
+        return view('tampil.createcon');
     }
 
     public function about()

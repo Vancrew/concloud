@@ -3,6 +3,12 @@
 
 <div class="row">
   <div class="col-xs-12">
+    <h3>Containers</h3>
+    @if(Session::has('alert-success'))
+        <div class="alert alert-success">
+          {{ Session::get('alert-success') }}
+        </div>
+    @endif
     <div class="box box-primary">
       <div class="box-header">
           <button type="button" class="btn btn-primary">Refresh</button>
@@ -31,46 +37,26 @@
             <th>Created</th>
             <th>Action </th>
           </tr>
-          <tr>
-            <td>4hjib683dgyr</td>
-            <td>swarm</td>
-            <td>Apache</td>
-            <td>alpine:latest</td>
-            <td><span class="label label-success">Approved</span></td>
-            <td>19-04-2017</td>
-            <td>
-              <button type="button" class="btn btn-primary"><i class="fa fa-search-plus"></i></button>
-              <button type="button" class="btn btn-success"><i class="fa  fa-wrench"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td>8423dv987jnd</td>
-            <td>swarm</td>
-            <td>mysql</td>
-            <td>mysql:latest</td>
-            <td><span class="label label-warning">Pending</span></td>
-            <td>19-04-2017</td>
-            <td><button type="button" class="btn btn-primary"><i class="fa fa-search-plus"></i></button></td>
-          </tr>
-          <tr>
-            <td>9okhnb543dfi</td>
-            <td>swarm</td>
-            <td>mysql</td>
-            <td>mysql:latest</td>
-            <td><span class="label label-primary">Approved</span></td>
-            <td>19-04-2017</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>0olku89of4g6</td>
-            <td>swarm</td>
-            <td>Apache</td>
-            <td>apache:latest</td>
-            <td><span class="label label-danger">Denied</span></td>
-            <td>19-04-2017</td>
-            <td> </td>
-          </tr>
-        </tbody></table>
+            <?php $no=1; ?>
+            @foreach($containers as $container)
+            <tr>
+              <td>{{$no++}}</td>
+              <td>{{$container->id_con}}</td>
+              <td>{{$container->id_user}}</td>
+              <td>
+                <span class="label label-danger">Denied</span>
+              </td>
+              <td>
+                <span class="label label-warning">Pending</span>
+              </td>
+              <td></td>
+              <td>
+                <button type="button" class="btn btn-primary"><i class="fa fa-search-plus"></i></button>
+                <button type="button" class="btn btn-success"><i class="fa  fa-wrench"></i></button>
+              </td>
+            </tr>
+            @endforeach
+          </tbody></table>
       </div>
       <!-- /.box-body -->
     </div>

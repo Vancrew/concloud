@@ -25,8 +25,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Container<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Create</a></li>
-            <li><a href="{{ url('/conlist') }}">List</a></li>
+            <li><a href="{{ url('/createcon') }}">Create</a></li>
+            <li><a href="{{ url('/listcon') }}">List</a></li>
           </ul>
         </li>
         <li class="dropdown">
